@@ -1,0 +1,34 @@
+DROP TABLE IF EXISTS election;
+DROP TABLE IF EXISTS candidate;
+DROP TABLE IF EXISTS message_Access;
+
+CREATE TABLE election(
+	election_ID INT AUTO_INCREMENT,
+	start_date datetime,
+	end_date datetime,
+	PRIMARY KEY (election_ID) 
+);
+insert into elecltion (start_date, end_date) values ('2019-07-30 00:00:01', '2019-07-30 00:00:01');
+
+
+CREATE TABLE candidate (
+	candidate_ID INT AUTO_INCREMENT,
+	election_ID varchar (30) NOT NULL,
+	name varchar (30) NOT NULL,
+	avatar varchar (255) NOT NULL,
+	info varchar (1000) NOT NULL,
+	PRIMARY KEY (candidate_ID), 
+	FOREIGN KEY (election_ID) REFERENCES election(election_ID)
+);
+
+insert into candidate (election_ID, name, avatar, info) values ('1', 'weilai', 'uploads/photo10.jpg', 'hello world!');
+
+
+CREATE TABLE feedback (
+	feedback_ID INT AUTO_INCREMENT,
+	date_Time datetime,
+	content varchar (1000) NOT NULL,
+	PRIMARY KEY (feedback_ID),
+);
+insert into feedback (message_ID, date_Time, content) values ('1', '2019-07-31 00:01:00', 'hello world!');
+ 
