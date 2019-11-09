@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS election;
 DROP TABLE IF EXISTS candidate;
-DROP TABLE IF EXISTS message_Access;
+DROP TABLE IF EXISTS feedback;
 
 CREATE TABLE election(
 	election_ID INT AUTO_INCREMENT,
