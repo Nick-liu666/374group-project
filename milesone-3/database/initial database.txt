@@ -8,8 +8,6 @@ CREATE TABLE election(
 	end_date datetime,
 	PRIMARY KEY (election_ID) 
 );
-insert into elecltion (start_date, end_date) values ('2019-07-30 00:00:01', '2019-07-30 00:00:01');
-
 
 CREATE TABLE candidate (
 	candidate_ID INT AUTO_INCREMENT,
@@ -21,14 +19,15 @@ CREATE TABLE candidate (
 	FOREIGN KEY (election_ID) REFERENCES election(election_ID)
 );
 
-insert into candidate (election_ID, name, avatar, info) values ('1', 'weilai', 'uploads/photo10.jpg', 'hello world!');
-
-
 CREATE TABLE feedback (
 	feedback_ID INT AUTO_INCREMENT,
 	date_Time datetime,
 	content varchar (1000) NOT NULL,
 	PRIMARY KEY (feedback_ID)
 );
+
+
+insert into elecltion (start_date, end_date) values ('2019-07-30 00:00:01', '2019-07-30 00:00:01');
+insert into candidate (election_ID, name, avatar, info) values ('1', 'weilai', 'uploads/photo10.jpg', 'hello world!');
 insert into feedback (message_ID, date_Time, content) values ('1', '2019-07-31 00:01:00', 'hello world!');
  
