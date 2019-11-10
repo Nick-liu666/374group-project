@@ -14,8 +14,8 @@ CREATE TABLE candidate (
 	election_ID varchar (30) NOT NULL,
 	name varchar (30) NOT NULL,
 	avatar varchar (255) NOT NULL,
-	info varchar (1000) NOT NULL,
-	link varchar (300) NOT NULL,
+	info varchar (2000) NOT NULL,
+	link varchar (500) NOT NULL,
 	PRIMARY KEY (candidate_ID), 
 	FOREIGN KEY (election_ID) REFERENCES election(election_ID)
 );
