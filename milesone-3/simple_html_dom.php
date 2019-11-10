@@ -634,7 +634,7 @@ class simple_html_dom_node
 			// Check if ID matches
 			if ($pass && $id !== '' && isset($node->attr['id'])) {
 				// Note: Only consider the first ID (as browsers do)
-				$node_id = explode(' ', trim($node->attr['id']))[0];
+				$node_id = explode(' ', trim($node->attr['id']));
 
 				if($id !== $node_id) { $pass = false; }
 			}
