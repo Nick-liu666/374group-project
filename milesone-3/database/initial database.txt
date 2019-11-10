@@ -29,5 +29,5 @@ CREATE TABLE feedback (
 
 insert into election (election_date, session) values ('2019-10-21', '43');
 insert into candidate (election_ID, name, avatar, info, link) values ('1', 'name', 'avator', 'content', 'link');
-insert into feedback (message_ID, date_Time, content) values ('1', '2019-07-31 00:01:00', 'hello world!');
+insert into feedback (date_Time, content) values ('2019-07-31 00:01:00', 'hello world!');
  
