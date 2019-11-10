@@ -4,16 +4,16 @@ DROP TABLE IF EXISTS feedback;
 
 CREATE TABLE election(
 	election_ID INT AUTO_INCREMENT,
-	start_date datetime,
-	end_date datetime,
+	election_date date,
+	session INT NOT NULL,
 	PRIMARY KEY (election_ID) 
 );
 
 CREATE TABLE candidate (
 	candidate_ID INT AUTO_INCREMENT,
-	election_ID varchar (30) NOT NULL,
-	name varchar (30) NOT NULL,
-	avatar varchar (255) NOT NULL,
+	election_ID varchar (100) NOT NULL,
+	name varchar (100) NOT NULL,
+	avatar varchar (500) NOT NULL,
 	info varchar (2000) NOT NULL,
 	link varchar (500) NOT NULL,
 	PRIMARY KEY (candidate_ID), 
@@ -27,8 +27,7 @@ CREATE TABLE feedback (
 	PRIMARY KEY (feedback_ID)
 );
 
-
-insert into elecltion (start_date, end_date) values ('2019-07-30 00:00:01', '2019-07-30 00:00:01');
-insert into candidate (election_ID, name, avatar, info) values ('1', 'weilai', 'uploads/photo10.jpg', 'hello world!');
+insert into election (election_date, session) values ('2019-10-21', '43');
+insert into candidate (election_ID, name, avatar, info, link) values ('1', 'name', 'avator', 'content', 'link');
 insert into feedback (message_ID, date_Time, content) values ('1', '2019-07-31 00:01:00', 'hello world!');
  
