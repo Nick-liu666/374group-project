@@ -1,0 +1,42 @@
+	<?php 
+	if (isset($_POST["submit"]) && $_POST["submit"])	//user click the submit button
+	{
+		$content = trim($_POST["message"]);				//copy to $content
+		$content_v = "/^[ -~]{1,1000}$/";				//regular of content
+		$contentMatch = preg_match($content_v, $content);	//check content is match or not
+		$validate = true;
+		if($content == null || $content == "" || $contentMatch == false)//check the condition
+		{
+			$validate = false;
+			print("<br> Content is not empty or exceed 1000 ");
+		}			
+				
+	if($validate == true)		//satisfy the conditions
+	{	
+		//build the contection with database
+		$db = new mysqli("localhost", "liu725", "liuxiny", "liu725");
+		if ($db->connect_error)			//check errors
+		{
+			die ("Connection failed: " . $db->connect_error);
+		}
+		$feedback_creation_datetime = date("Y-m-d H:i:s", time());		//get the time for now
+		//command to insert the content to database
+		$q2 = "INSERT INTO feedback (date_Time, content) VALUES ('$feedback_creation_datetime', '$content')";
+		$r2 = $db->query($q2);
+		if ($r2 === true)		//check is it worked or not
+		{
+			print("Successful send the feedback");
+			$db->close();
+			exit();
+		}
+		else{
+			print ("unsuccessful send the feedback");
+		}
+	}
+	else
+	{
+		print("unsuccessful send the feedback<br>");
+		$db->close();
+	}
+	}
+	?>
