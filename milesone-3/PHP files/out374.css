@@ -1,0 +1,213 @@
+body{
+	background-color: #6E7789;
+	font-family: Helvetica, Arial;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+header{
+  background-image: url("header_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  padding:0;
+  margin:0;
+  height: 12vw;
+  width: 100%;
+}
+.logo
+{
+	padding-top: 0.5%;
+	padding-left: 0.5%;
+}
+h1
+{
+	font-size: 3vw;
+	padding-left: 35%;
+	font-family: cursive;
+	display: inline-block;
+	font-style: oblique;
+}
+.quote
+{
+	float: none;
+	text-align: center;
+}
+
+
+
+
+
+
+nav {
+    font-size: 1.5vw;
+    width: 100%;
+		background: #990000;
+}
+nav li{
+	display:inline;
+	text-align: center;
+	list-style-type: none;
+	font-family: monospace;
+	text-decoration-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #ffcccc;
+	padding-left: 10%;
+}
+
+a:hover{
+  color: white;
+}
+
+
+
+
+
+.about_us_images
+{
+	margin-right: 0px;
+	float: right;
+}
+
+h2
+{
+	text-decoration: underline;
+	float: left;
+}
+
+
+textarea.message
+{
+	float: left;
+}
+span.charCount
+{
+  color: red;
+}
+.error_message
+  {
+    font-size: 11;
+    color: red;
+  }
+
+
+
+#main{
+	text-align: center;
+	width: 90%;
+	height: 96%;
+	overflow: auto;
+}
+
+
+label{
+	text-align: center;
+}
+
+
+video{
+	position: relative;
+	left: 80px;
+	margin-top: 80px;
+	width: 50vw;
+	height: 30vw;
+}
+
+#textarea_message{
+
+display: block;
+text-align: left;
+font-size: 1.25vw;
+
+}
+
+
+
+
+
+
+
+
+#History{
+	position: absolute;
+    left: 100px;
+	width: 200px;
+	float: right;
+	text-align: center;
+}
+#History h1{
+	font-family: monospace;
+	text-align: center;
+}
+
+#Present{
+	position: absolute;
+	left: 550px;
+	width: 200px;
+	float: left;
+	float: right;
+	text-align: center;
+}
+#Present h1{
+	font-family: monospace;
+}
+
+#Our_Goal{
+	position: absolute;
+	left: 950px;
+	width: 303px;
+	float: left;
+	text-align: center;
+}
+#Our_Goal h1{
+	font-family: monospace;
+	text-align: center;
+}
+
+
+
+
+
+
+#contact{
+	position: relative;
+	top: 60%;
+	text-align: center;
+
+}
+#developers{
+	position: relative;
+	top: 80%;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	position: relative;
+	top: 490px;
+	bottom: 0px;
+	background-color: #AB170D;
+	clear: both;
+	text-align: center;
+
+}
