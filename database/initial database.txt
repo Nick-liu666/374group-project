@@ -1,0 +1,33 @@
+DROP TABLE IF EXISTS election;
+DROP TABLE IF EXISTS candidate;
+DROP TABLE IF EXISTS feedback;
+
+CREATE TABLE election(
+	election_ID INT AUTO_INCREMENT,
+	election_date date,
+	session INT NOT NULL,
+	PRIMARY KEY (election_ID) 
+);
+
+CREATE TABLE candidate (
+	candidate_ID INT AUTO_INCREMENT,
+	election_ID varchar (100) NOT NULL,
+	name varchar (100) NOT NULL,
+	avatar varchar (500) NOT NULL,
+	info varchar (2000) NOT NULL,
+	link varchar (500) NOT NULL,
+	PRIMARY KEY (candidate_ID), 
+	FOREIGN KEY (election_ID) REFERENCES election(election_ID)
+);
+
+CREATE TABLE feedback (
+	feedback_ID INT AUTO_INCREMENT,
+	date_Time datetime,
+	content varchar (1000) NOT NULL,
+	PRIMARY KEY (feedback_ID)
+);
+
+insert into election (election_date, session) values ('2019-10-21', '43');
+insert into candidate (election_ID, name, avatar, info, link) values ('1', 'name', 'avator', 'content', 'link');
+insert into feedback (date_Time, content) values ('2019-07-31 00:01:00', 'hello world!');
+ 
