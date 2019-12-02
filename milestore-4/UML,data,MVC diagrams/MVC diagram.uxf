@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>598</x>
+      <y>273</y>
+      <w>143</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>Model
+bg=orange
+--
+-MySQL</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>403</x>
+      <y>65</y>
+      <w>143</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>Controller
+bg=cyan
+transparency=0
+layer=1
+--
+-PhP files
+-JavaScript
+-JSON</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>208</x>
+      <y>286</y>
+      <w>143</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>View
+bg=green
+--
+-Html
+-Css</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>143</x>
+      <y>507</y>
+      <w>143</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>User
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>533</x>
+      <y>130</y>
+      <w>182</w>
+      <h>169</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send data
+</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>494</x>
+      <y>182</y>
+      <w>195</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Send request</panel_attributes>
+    <additional_attributes>90.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>156</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+HTTP response</panel_attributes>
+    <additional_attributes>10.0;100.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>325</x>
+      <y>195</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+HTTP request</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>156</x>
+      <y>364</y>
+      <w>182</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Show interface</panel_attributes>
+    <additional_attributes>10.0;120.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>416</y>
+      <w>117</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Interact</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

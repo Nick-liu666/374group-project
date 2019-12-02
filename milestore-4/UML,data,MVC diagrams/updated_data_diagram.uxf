@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>240</y>
+      <w>180</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>election
+--
+*election_ID :int
+-election_date : date
+-session	: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>240</y>
+      <w>216</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>candidate
+--
+*candidate_ID : int
++election_ID : varchar
+-name : varchar
+-avatar : varchar
+-info : varchar
+-link : varchar
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>300</y>
+      <w>168</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>468</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>feedback
+--
+*feedback_ID : int
+-date_Time	: datetime
+-content	: varchar
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
